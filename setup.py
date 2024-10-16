@@ -45,7 +45,7 @@ def get_extensions():
 
     this_dir = os.path.dirname(os.path.abspath(__file__))
     print("this_dir", this_dir)
-    extensions_dir = os.path.join(this_dir, "pytorch3d", "csrc")
+    extensions_dir = os.path.join("pytorch3d", "csrc")
     print("extensions_dir", extensions_dir)
     sources = glob.glob(os.path.join(extensions_dir, "**", "*.cpp"), recursive=True)
     source_cuda = glob.glob(os.path.join(extensions_dir, "**", "*.cu"), recursive=True)
